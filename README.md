@@ -1,5 +1,8 @@
 # AVR-Instruction-Set
 
+## Convert table between Markdown ↔ CSV
+Regex replace all: `\\n` ↔ `\n` and ` \| ` ↔ `\t`.
+
 ## Arithmetic and Logic
 Mnemonic | Operands | Description | Operation | Flags | AVR #Clocks | AVRxm #Clocks | AVRxt #Clocks | AVRrc #Clocks
 --- | --- | --- | --- | --- | --- | --- | --- | ---
