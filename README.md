@@ -164,3 +164,13 @@ BREAK |  | Break |  |  | 1 | 1 | 1 | 1
 NOP |  | No Operation |  |  | 1 | 1 | 1 | 1
 SLEEP |  | Sleep |  |  | 1 | 1 | 1 | 1
 WDR |  | Watchdog Reset |  |  | 1 | 1 | 1 | 1
+
+
+## Notes
+1. Cycle time for data memory accesses assume internal RAM access, and are not valid for accesses
+through the NVM controller. A minimum of one extra cycle must be added when accessing memory
+through the NVM controller (such as Flash and EEPROM), but depending on simultaneous
+accesses by other masters or the NVM controller state, there may be more than one extra cycle.
+2. One extra cycle must be added when accessing lower (64 bytes of) I/O space.
+3. The instruction is not available on all devices.
+4. Device dependent. See the device specific datasheet.
