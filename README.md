@@ -1,6 +1,7 @@
 <div align="center">
 
-# AVR-Instruction-Set
+# AVR Instruction Set
+Table Overview
 
 </div>
 
