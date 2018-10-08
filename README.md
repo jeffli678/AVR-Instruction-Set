@@ -1,4 +1,8 @@
+<div align="center">
+
 # AVR-Instruction-Set
+
+</div>
 
 ## CPU Versions
 - AVR - AT90 - Original instruction set from 1995.
