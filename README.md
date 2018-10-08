@@ -1,5 +1,39 @@
 # AVR-Instruction-Set
 
+## CPU Versions
+- AVR - AT90 - Original instruction set from 1995.
+- AVRe - megaAVR® - Multiply (xMULxx), Move Word (MOVW), and enhanced Load Program
+Memory (LPM) added to the AVR instruction set. No timing differences.
+- AVRe - tinyAVR® - Multiply not included, but else equal to AVRe for megaAVR.
+- AVRxm - XMEGA® - Significantly different timing compared to AVR(e). The Read Modify Write
+(RMW) and DES encryption instructions are unique to this version.
+- AVRxt - (AVR) - AVR 2016 and onwards. This variant is based on AVRe and AVRxm.
+Closer related to AVRe, but with improved timing.
+- AVRrc - tinyAVR - The Reduced Core AVR CPU was developed for ultra-low pinout (6-pin)
+size constrained devices. The AVRrc therefore only has a 16 registers
+register-file (R31-R16) and a limited instruction set.
+
+## Registers and Operands
+- Rd - Destination (and source) register in the Register File
+- Rr - Source register in the Register File
+- R - Result after instruction is executed
+- K - Constant data
+- k - Constant address
+- b - Bit in the Register File or I/O Register (3-bit)
+- s - Bit in the Status Register (3-bit)
+- X,Y,Z - Indirect Address Register (X=R27:R26, Y=R29:R28, and Z=R31:R30)
+- A - I/O location address
+- q - Displacement for direct addressing (6-bit)
+
+## Status Register (SREG)
+- C - Carry Flag
+- Z - Zero Flag
+- N - Negative Flag
+- V - Two’s complement overflow indicator
+- S - N ⊕ V, for signed tests
+- H - Half Carry Flag
+- T - Transfer bit used by BLD and BST instructions I Global Interrupt Enable/Disable Flag
+
 ## Convert table between Markdown ↔ CSV
 Regex replace all: `\\n` ↔ `\n` and ` \| ` ↔ `\t`.
 
