@@ -190,7 +190,7 @@ ST | Y+, Rr | Store Indirect and Post-Increment | "(Y) ← Rr\nY ← Y + 1" |  |
 ST | -Y, Rr | Store Indirect and Pre-Decrement | "Y ← Y - 1\n(Y) ← Rr" |  | 2(1)(2) | 2(1)(2) | 1(1)(2) | 2
 ST | Z, Rr | Store Indirect | (Z) ← Rr |  | 2(1)(2) | 1(1)(2) | 1(1)(2) | 1
 ST | Z+, Rr | Store Indirect and Post-Increment | "(Z) ← Rr\nZ ← Z + 1" |  | 2(1)(2) | 1(1)(2) | 1(1)(2) | 1
-ST | -Z, Rr | Store Indirect and Pre-Decrement | Z ← Z - 1 |  | 2(1)(2) | 2(1)(2) | 1(1)(2) | 2
+ST | -Z, Rr | Store Indirect and Pre-Decrement | "Z ← Z - 1\n(Z) ← Rr" |  | 2(1)(2) | 2(1)(2) | 1(1)(2) | 2
 STD | Y+q, Rr | Store Indirect with Displacement | (Y + q) ← Rr |  | 2(1)(2) | 2(1)(2) | 1(1)(2) | N/A
 STD | Z+q,Rr | Store Indirect with Displacement | (Z + q) ← Rr |  | 2(1)(2) | 2(1)(2) | 1(1)(2) | N/A
 STS | k, Rr | Store Direct to Data Space | (k) ← Rd |  | 2(1)(2) | 2(1)(2) | 2(1)(2) | 1
